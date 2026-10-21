@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario con Listas Enlazadas</title>
+</head>
+<body>
+
+    <div id="App">
+        <form id="formInventario">
+            <label for="txtCod">Código:</label>
+            <input type="number" id="txtCod"><br><br>
+
+            <label for="txtNom">Nombre:</label>
+            <input type="text" id="txtNom"><br><br>
+
+            <label for="txtCant">Cantidad:</label>
+            <input type="number" id="txtCant"><br><br>
+
+            <label for="txtCosto">Precio / Costo:</label>
+            <input type="number" id="txtCosto"><br><br>
+
+            <label for="txtPos">Posición (solo para Insertar):</label>
+            <input type="number" id="txtPos"><br><br>
+
+            <button type="button" id="btnAdd">Agregar al Final</button>
+            <button type="button" id="btnAddInicio">Agregar al Inicio</button>
+            <button type="button" id="btnInsertar">Insertar en Posición</button>
+            <button type="button" id="btnBuscar">Buscar por Código</button>
+            <button type="button" id="btnEliminar">Eliminar por Código</button>
+            <button type="button" id="btnExtraerPrimero">Extraer Primero</button>
+            <button type="button" id="btnListar">Listar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+
+        <hr>
+        <div id="detalles"></div>
+    </div>
+
+    <!-- Cargar los archivos en orden: Producto -> Nodo -> Inventario -> app -->
+    <script src="js/Producto.js"></script>
+    <script src="js/Nodo.js"></script>
+    <script src="js/Inventario.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
